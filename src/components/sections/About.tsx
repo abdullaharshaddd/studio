@@ -1,0 +1,43 @@
+
+import React from 'react';
+import Image from 'next/image';
+import { Card, CardContent } from '@/components/ui/card';
+
+export default function About() {
+  return (
+    <section id="about" className="w-full bg-secondary py-16 md:py-24">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="grid gap-12 md:grid-cols-2 md:gap-16">
+          <div className="space-y-4">
+            <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
+              About Us
+            </div>
+            <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
+              Our Legacy in Leather
+            </h2>
+            <p className="text-muted-foreground md:text-lg">
+              LeatherBound Exports is a premier exporter of high-quality leather jackets based in Pakistan. With years of expertise in sourcing the finest materials and masterful craftsmanship, we deliver products that meet the highest international standards.
+            </p>
+            <p className="text-muted-foreground md:text-lg">
+              Our mission is to connect the world with Pakistan's rich heritage of leatherwork. We have a strong export history, with established partners in the USA and Canada, and have previously sold our premium collections on platforms like Amazon, earning a reputation for quality and reliability.
+            </p>
+          </div>
+          <div className="flex items-center justify-center">
+            <Card className="overflow-hidden rounded-lg shadow-lg">
+              <CardContent className="p-0">
+                <Image
+                  src="https://placehold.co/600x450.png"
+                  alt="Craftsman working on a leather jacket"
+                  data-ai-hint="leather craft"
+                  width={600}
+                  height={450}
+                  className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
