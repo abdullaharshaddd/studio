@@ -16,7 +16,7 @@ export default function About() {
               Our Legacy in Leather
             </h2>
             <p className="text-muted-foreground md:text-lg">
-              LeatherBound Exports is a premier exporter of high-quality leather jackets based in Pakistan. With years of expertise in sourcing the finest materials and masterful craftsmanship, we deliver products that meet the highest international standards.
+              Prestige Leathers is a premier exporter of high-quality leather jackets based in Pakistan. With years of expertise in sourcing the finest materials and masterful craftsmanship, we deliver products that meet the highest international standards.
             </p>
             <p className="text-muted-foreground md:text-lg">
               Our mission is to connect the world with Pakistan's rich heritage of leatherwork. We have a strong export history, with established partners in the USA and Canada, and have previously sold our premium collections on platforms like Amazon, earning a reputation for quality and reliability.

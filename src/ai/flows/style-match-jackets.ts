@@ -1,3 +1,4 @@
+
 'use server';
 /**
  * @fileOverview AI powered style match tool.
@@ -34,7 +35,7 @@ const prompt = ai.definePrompt({
   output: {schema: StyleMatchJacketsOutputSchema},
   prompt: `You are an AI assistant that helps users find visually similar leather jackets from a catalog based on an uploaded image.
 
-Analyze the style of the leather jacket in the following image and provide a description of visually similar jackets from the LeatherBound Exports catalog.
+Analyze the style of the leather jacket in the following image and provide a description of visually similar jackets from the Prestige Leathers catalog.
 
 Photo: {{media url=photoDataUri}}`,
 });

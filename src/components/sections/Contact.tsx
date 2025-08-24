@@ -12,7 +12,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { useToast } from '@/hooks/use-toast';
 import { submitInquiry } from '@/lib/actions';
 import { Card, CardContent } from '../ui/card';
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { Mail, MapPin, Phone, Loader2 } from 'lucide-react';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -70,9 +70,9 @@ export default function Contact() {
         <div className="grid gap-12 md:grid-cols-2">
           <div className="flex flex-col justify-center space-y-6">
              <h3 className="font-headline text-2xl font-bold">Get in Touch Directly</h3>
-             <a href="mailto:info@leatherbound.com" className="flex items-center gap-4 text-lg text-foreground transition-colors hover:text-primary">
+             <a href="mailto:info@prestigeleathers.com" className="flex items-center gap-4 text-lg text-foreground transition-colors hover:text-primary">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><Mail className="h-6 w-6 text-primary" /></div>
-                <span>info@leatherbound.com</span>
+                <span>info@prestigeleathers.com</span>
              </a>
              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-lg text-foreground transition-colors hover:text-primary">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><Phone className="h-6 w-6 text-primary" /></div>

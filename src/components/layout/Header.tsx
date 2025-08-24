@@ -42,7 +42,7 @@ export default function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="text-xl font-bold font-headline text-primary transition-transform hover:scale-105">
-          LeatherBound Exports
+          Prestige Leathers
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navItems.map((item) => (
@@ -67,7 +67,7 @@ export default function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col p-6">
                 <Link href="/" className="mb-8 text-2xl font-bold font-headline text-primary" onClick={handleLinkClick}>
-                  LeatherBound Exports
+                  Prestige Leathers
                 </Link>
                 <nav className="flex flex-col gap-6">
                   {navItems.map((item) => (
