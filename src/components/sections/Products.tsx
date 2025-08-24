@@ -1,7 +1,9 @@
 
+"use client";
 import React from 'react';
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { motion } from 'framer-motion';
 
 const productCategories = [
   {
@@ -42,11 +44,36 @@ const productCategories = [
   },
 ];
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.1,
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  }),
+};
+
 export default function Products() {
   return (
-    <section id="products" className="w-full py-16 md:py-24">
+    <motion.section 
+      id="products" 
+      className="w-full py-16 md:py-24"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mb-12 text-center">
+        <motion.div 
+          className="mb-12 text-center"
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+          }}
+        >
           <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
             Our Catalog
           </div>
@@ -56,29 +83,35 @@ export default function Products() {
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground md:text-lg">
             Explore our diverse range of leather jackets, each with its own character and built to last.
           </p>
-        </div>
+        </motion.div>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {productCategories.map((category) => (
-            <Card key={category.title} className="group overflow-hidden rounded-lg shadow-lg transition-all hover:shadow-2xl">
-              <CardContent className="p-0">
-                <div className="relative h-80 w-full overflow-hidden">
-                  <Image
-                    src={category.image}
-                    alt={category.title}
-                    data-ai-hint={category.aiHint}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <div className="p-6">
-                  <CardTitle className="font-headline text-xl font-bold">{category.title}</CardTitle>
-                  <CardDescription className="mt-2 text-muted-foreground">{category.description}</CardDescription>
-                </div>
-              </CardContent>
-            </Card>
+          {productCategories.map((category, i) => (
+            <motion.div
+              key={category.title}
+              variants={cardVariants}
+              custom={i}
+            >
+              <Card className="group h-full overflow-hidden rounded-lg shadow-lg transition-all hover:shadow-2xl">
+                <CardContent className="p-0">
+                  <div className="relative h-80 w-full overflow-hidden">
+                    <Image
+                      src={category.image}
+                      alt={category.title}
+                      data-ai-hint={category.aiHint}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <CardTitle className="font-headline text-xl font-bold">{category.title}</CardTitle>
+                    <CardDescription className="mt-2 text-muted-foreground">{category.description}</CardDescription>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

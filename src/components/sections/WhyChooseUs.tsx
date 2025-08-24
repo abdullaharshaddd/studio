@@ -1,7 +1,9 @@
 
+"use client";
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Gem, ShieldCheck, Globe, Package, CheckSquare } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const features = [
   {
@@ -31,11 +33,26 @@ const features = [
   },
 ];
 
+const fadeIn = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+};
+
 export default function WhyChooseUs() {
   return (
-    <section id="why-us" className="w-full bg-secondary py-16 md:py-24">
+    <motion.section 
+      id="why-us" 
+      className="w-full bg-secondary py-16 md:py-24"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={{ visible: { transition: { staggerChildren: 0.2 } } }}
+    >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mb-12 text-center">
+        <motion.div 
+          className="mb-12 text-center"
+          variants={fadeIn}
+        >
           <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
             Our Commitment
           </div>
@@ -45,19 +62,23 @@ export default function WhyChooseUs() {
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground md:text-lg">
             We are dedicated to providing exceptional value through quality, reliability, and service.
           </p>
-        </div>
+        </motion.div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature) => (
-            <div key={feature.title} className="flex flex-col items-center text-center md:items-start md:text-left">
+            <motion.div 
+              key={feature.title} 
+              className="flex flex-col items-center text-center md:items-start md:text-left"
+              variants={fadeIn}
+            >
               <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                 {feature.icon}
               </div>
               <h3 className="font-headline text-xl font-bold">{feature.title}</h3>
               <p className="mt-2 text-muted-foreground">{feature.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

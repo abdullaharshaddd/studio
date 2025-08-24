@@ -11,6 +11,7 @@ import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Lightbulb, Loader2, UploadCloud } from 'lucide-react';
 import Image from 'next/image';
 import { Skeleton } from '../ui/skeleton';
+import { motion } from 'framer-motion';
 
 export default function StyleMatch() {
   const [file, setFile] = useState<File | null>(null);
@@ -61,7 +62,14 @@ export default function StyleMatch() {
   };
 
   return (
-    <section id="style-match" className="w-full py-16 md:py-24">
+    <motion.section 
+      id="style-match" 
+      className="w-full py-16 md:py-24"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.6 }}
+    >
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-12 text-center">
           <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
@@ -154,6 +162,6 @@ export default function StyleMatch() {
           </CardContent>
         </Card>
       </div>
-    </section>
+    </motion.section>
   );
 }

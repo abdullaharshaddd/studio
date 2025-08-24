@@ -1,14 +1,28 @@
 
+"use client";
 import React from 'react';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
+import { motion } from 'framer-motion';
+
+const fadeIn = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+};
 
 export default function About() {
   return (
-    <section id="about" className="w-full bg-secondary py-16 md:py-24">
+    <motion.section
+      id="about"
+      className="w-full bg-secondary py-16 md:py-24"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={{ visible: { transition: { staggerChildren: 0.2 } } }}
+    >
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-12 md:grid-cols-2 md:gap-16">
-          <div className="space-y-4">
+          <motion.div variants={fadeIn} className="space-y-4">
             <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
               About Us
             </div>
@@ -21,8 +35,8 @@ export default function About() {
             <p className="text-muted-foreground md:text-lg">
               Our mission is to connect the world with Pakistan's rich heritage of leatherwork. We have a strong export history, with established partners in the USA and Canada, and have previously sold our premium collections on platforms like Amazon, earning a reputation for quality and reliability.
             </p>
-          </div>
-          <div className="flex items-center justify-center">
+          </motion.div>
+          <motion.div variants={fadeIn} className="flex items-center justify-center">
             <Card className="overflow-hidden rounded-lg shadow-lg">
               <CardContent className="p-0">
                 <Image
@@ -35,9 +49,9 @@ export default function About() {
                 />
               </CardContent>
             </Card>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
