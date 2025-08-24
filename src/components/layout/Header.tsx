@@ -41,12 +41,12 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="text-xl font-bold font-headline text-primary transition-transform hover:scale-105">
+        <Link href="/" className="text-2xl font-bold uppercase font-headline text-primary transition-transform hover:scale-105">
           Prestige Leathers
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navItems.map((item) => (
-            <Link key={item.name} href={item.href} className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary">
+            <Link key={item.name} href={item.href} className="text-sm font-medium tracking-wider uppercase text-foreground/80 transition-colors hover:text-primary">
               {item.name}
             </Link>
           ))}
@@ -66,12 +66,12 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col p-6">
-                <Link href="/" className="mb-8 text-2xl font-bold font-headline text-primary" onClick={handleLinkClick}>
+                <Link href="/" className="mb-8 text-2xl font-bold uppercase font-headline text-primary" onClick={handleLinkClick}>
                   Prestige Leathers
                 </Link>
                 <nav className="flex flex-col gap-6">
                   {navItems.map((item) => (
-                    <Link key={item.name} href={item.href} className="text-lg font-medium text-foreground/80 transition-colors hover:text-primary" onClick={handleLinkClick}>
+                    <Link key={item.name} href={item.href} className="text-lg font-medium tracking-wider uppercase text-foreground/80 transition-colors hover:text-primary" onClick={handleLinkClick}>
                       {item.name}
                     </Link>
                   ))}

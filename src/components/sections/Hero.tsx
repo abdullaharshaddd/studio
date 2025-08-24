@@ -30,7 +30,7 @@ export default function Hero() {
             variants={fadeIn}
             initial="hidden"
             animate="visible"
-            className="font-headline text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
+            className="font-headline text-4xl font-bold uppercase tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
           >
             Exporting Premium Leather Jackets Worldwide
           </motion.h1>
@@ -52,7 +52,7 @@ export default function Hero() {
             className="mt-10"
             style={{ animationDelay: '0.4s' }}
           >
-            <Button size="lg" asChild className="bg-accent text-accent-foreground transition-transform hover:scale-105 hover:bg-accent/90">
+            <Button size="lg" asChild className="bg-primary text-primary-foreground transition-transform hover:scale-105 hover:bg-primary/90">
               <Link href="#contact">Contact Us to Source</Link>
             </Button>
           </motion.div>
