@@ -16,7 +16,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative h-[calc(100vh-5rem)] min-h-[600px] w-full">
       <Image
-        src="https://placehold.co/1920x1080.png"
+        src="https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?q=80&w=1920&auto=format&fit=crop"
         alt="Premium leather jackets"
         data-ai-hint="leather jackets"
         fill

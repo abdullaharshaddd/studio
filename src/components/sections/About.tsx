@@ -40,7 +40,7 @@ export default function About() {
             <Card className="overflow-hidden rounded-lg shadow-lg">
               <CardContent className="p-0">
                 <Image
-                  src="https://placehold.co/600x450.png"
+                  src="https://images.unsplash.com/photo-1617504343168-de135d5b3142?q=80&w=600&auto=format&fit=crop"
                   alt="Craftsman working on a leather jacket"
                   data-ai-hint="leather craft"
                   width={600}
