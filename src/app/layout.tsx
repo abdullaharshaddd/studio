@@ -4,7 +4,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Prestige Leathers',
+  title: 'Prestige Leather',
   description: 'Exporting Premium Leather Jackets Worldwide',
 };
 

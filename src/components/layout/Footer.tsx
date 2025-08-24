@@ -17,10 +17,10 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="text-center md:text-left">
             <Link href="/" className="text-2xl font-bold uppercase font-headline text-primary">
-              Prestige Leathers
+              Prestige Leather
             </Link>
             <p className="mt-2 text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} Prestige Leathers. All rights reserved.
+              &copy; {new Date().getFullYear()} Prestige Leather. All rights reserved.
             </p>
           </div>
           <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
