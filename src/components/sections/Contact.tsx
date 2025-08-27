@@ -93,11 +93,11 @@ export default function Contact() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><Mail className="h-6 w-6 text-primary" /></div>
                 <span>info@prestigeleathers.com</span>
              </a>
-             <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-lg text-foreground transition-colors hover:text-primary">
+             <a href="https://wa.me/17807789577" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-lg text-foreground transition-colors hover:text-primary">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><Phone className="h-6 w-6 text-primary" /></div>
                 <span>WhatsApp Us</span>
              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-lg text-foreground transition-colors hover:text-primary">
+              <a href="https://www.linkedin.com/company/prestige-leather-wholesale" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-lg text-foreground transition-colors hover:text-primary">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><Linkedin className="h-6 w-6 text-primary" /></div>
                 <span>Connect on LinkedIn</span>
               </a>
