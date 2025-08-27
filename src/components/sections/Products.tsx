@@ -1,4 +1,3 @@
-
 "use client";
 import React from 'react';
 import Image from 'next/image';
@@ -6,6 +5,12 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { motion } from 'framer-motion';
 
 const productCategories = [
+  {
+    title: 'Custom Orders',
+    description: 'Your vision, our craftsmanship. We offer bespoke services for unique designs.',
+    image: 'https://images.unsplash.com/photo-1528245582846-d8f516886e08?q=80&w=400&auto=format&fit=crop',
+    aiHint: 'custom design',
+  },
   {
     title: 'Biker Jackets',
     description: 'Classic and rebellious, our biker jackets are crafted for the modern adventurer.',
@@ -35,12 +40,6 @@ const productCategories = [
     description: 'An iconic silhouette, reimagined with premium materials and modern details.',
     image: 'https://images.unsplash.com/photo-1611842637209-9686518a2ba8?q=80&w=400&auto=format&fit=crop',
     aiHint: 'bomber jacket',
-  },
-  {
-    title: 'Custom Orders',
-    description: 'Your vision, our craftsmanship. We offer bespoke services for unique designs.',
-    image: 'https://images.unsplash.com/photo-1528245582846-d8f516886e08?q=80&w=400&auto=format&fit=crop',
-    aiHint: 'custom design',
   },
 ];
 
