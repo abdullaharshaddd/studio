@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const productCategories = [
   {
     title: 'Custom Orders',
-    description: 'Your vision, our craftsmanship. We offer bespoke services for unique designs.',
+    description: 'Your vision, our craftsmanship. We offer bespoke services for unique designs, including personal branding and custom designs.',
     image: 'https://images.unsplash.com/photo-1528245582846-d8f516886e08?q=80&w=400&auto=format&fit=crop',
     aiHint: 'custom design',
   },
