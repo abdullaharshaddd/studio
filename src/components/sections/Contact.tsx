@@ -103,7 +103,7 @@ export default function Contact() {
               </a>
              <div className="flex items-center gap-4 text-lg text-foreground">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><MapPin className="h-6 w-6 text-primary" /></div>
-                <span>Sialkot, Pakistan</span>
+                <span>Lahore, Pakistan</span>
              </div>
           </motion.div>
           <motion.div variants={fadeIn}>
