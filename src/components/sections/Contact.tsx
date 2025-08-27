@@ -12,7 +12,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { useToast } from '@/hooks/use-toast';
 import { submitInquiry } from '@/lib/actions';
 import { Card, CardContent } from '../ui/card';
-import { Mail, MapPin, Phone, Loader2 } from 'lucide-react';
+import { Mail, MapPin, Phone, Loader2, Linkedin } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const formSchema = z.object({
@@ -97,6 +97,10 @@ export default function Contact() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><Phone className="h-6 w-6 text-primary" /></div>
                 <span>WhatsApp Us</span>
              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-lg text-foreground transition-colors hover:text-primary">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><Linkedin className="h-6 w-6 text-primary" /></div>
+                <span>Connect on LinkedIn</span>
+              </a>
              <div className="flex items-center gap-4 text-lg text-foreground">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><MapPin className="h-6 w-6 text-primary" /></div>
                 <span>Sialkot, Pakistan</span>
