@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
-import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet';
 import Image from 'next/image';
 
 const navItems = [
@@ -65,6 +65,9 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetHeader>
+                <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+              </SheetHeader>
               <div className="flex flex-col p-6">
                 <Link href="/" className="mb-8 flex items-center gap-2 text-2xl font-bold uppercase font-headline text-primary" onClick={handleLinkClick}>
                   <Image src="/Prestige leather.png" alt="Prestige Leather Logo" width={40} height={40} className="h-10 w-auto" />
