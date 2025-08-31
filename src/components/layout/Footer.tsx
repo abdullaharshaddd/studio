@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="text-center md:text-left">
             <Link href="/" className="inline-flex items-center gap-2 text-2xl font-bold uppercase font-headline text-primary">
-              <Image src="/logo.png" alt="Prestige Leather Logo" width={40} height={40} className="h-10 w-auto" />
+              <Image src="/Prestige leather.png" alt="Prestige Leather Logo" width={40} height={40} className="h-10 w-auto" />
               <span>Prestige Leather</span>
             </Link>
             <p className="mt-2 text-sm text-muted-foreground">

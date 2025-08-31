@@ -24,6 +24,13 @@ const productCategories = [
     image: '/cowhide.jpeg',
     aiHint: 'cowhide jacket',
   },
+  {
+    title: 'Leather Bags',
+    description: 'Crafted from premium leather, our bags combine durability with timeless style, making them perfect for both everyday use and professional settings.',
+    image: '/bag.jpeg',
+    aiHint: 'leather bag',
+  },
+  
 
 ];
 

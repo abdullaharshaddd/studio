@@ -41,7 +41,7 @@ export default function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold uppercase font-headline text-primary transition-transform hover:scale-105">
-          <Image src="/logo.png" alt="Prestige Leather Logo" width={40} height={40} className="h-10 w-auto" />
+          <Image src="/Prestige leather.png" alt="Prestige Leather Logo" width={40} height={40} className="h-10 w-auto" />
           <span>Prestige Leather</span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
@@ -67,7 +67,7 @@ export default function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col p-6">
                 <Link href="/" className="mb-8 flex items-center gap-2 text-2xl font-bold uppercase font-headline text-primary" onClick={handleLinkClick}>
-                  <Image src="/logo.png" alt="Prestige Leather Logo" width={40} height={40} className="h-10 w-auto" />
+                  <Image src="/Prestige leather.png" alt="Prestige Leather Logo" width={40} height={40} className="h-10 w-auto" />
                   <span>Prestige Leather</span>
                 </Link>
                 <nav className="flex flex-col gap-6">
