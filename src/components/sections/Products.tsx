@@ -8,39 +8,23 @@ const productCategories = [
   {
     title: 'Custom Orders',
     description: 'Your vision, our craftsmanship. We offer bespoke services for unique designs, including personal branding and custom designs.',
-    image: 'https://images.unsplash.com/photo-1528245582846-d8f516886e08?q=80&w=400&auto=format&fit=crop',
+    image: '/custom order.jpeg',
     aiHint: 'custom design',
   },
   {
     title: 'Biker Jackets',
     description: 'Classic and rebellious, our biker jackets are crafted for the modern adventurer.',
-    image: 'https://images.unsplash.com/photo-1551232864-3f0890e580d9?q=80&w=400&auto=format&fit=crop',
+    image: '/biker.jpeg',
     aiHint: 'biker jacket',
-  },
+  }
+  ,
   {
     title: 'Cowhide Jackets',
-    description: 'Durable and timeless, made from premium full-grain cowhide leather.',
-    image: 'https://images.unsplash.com/photo-1603217183398-34994a5e3e23?q=80&w=400&auto=format&fit=crop',
-    aiHint: 'leather jacket',
+    description: 'Durable and timeless, our cowhide jackets combine rugged strength with premium style, perfect for those who value authenticity and endurance.',
+    image: '/cowhide.jpeg',
+    aiHint: 'cowhide jacket',
   },
-  {
-    title: 'Fashion Jackets',
-    description: 'Trend-setting designs that blend contemporary style with classic leather appeal.',
-    image: 'https://images.unsplash.com/photo-1509319117193-57bab727e09d?q=80&w=400&auto=format&fit=crop',
-    aiHint: 'fashion jacket',
-  },
-  {
-    title: 'Suede Jackets',
-    description: 'Soft, luxurious, and sophisticated. A perfect statement piece for any wardrobe.',
-    image: 'https://images.unsplash.com/photo-1629228847842-81c74a065917?q=80&w=400&auto=format&fit=crop',
-    aiHint: 'suede jacket',
-  },
-  {
-    title: 'Bomber Jackets',
-    description: 'An iconic silhouette, reimagined with premium materials and modern details.',
-    image: 'https://images.unsplash.com/photo-1611842637209-9686518a2ba8?q=80&w=400&auto=format&fit=crop',
-    aiHint: 'bomber jacket',
-  },
+
 ];
 
 const cardVariants = {

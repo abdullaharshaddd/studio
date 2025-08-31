@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -7,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet';
+import Image from 'next/image';
 
 const navItems = [
   { name: 'About', href: '#about' },
@@ -40,8 +40,9 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="text-2xl font-bold uppercase font-headline text-primary transition-transform hover:scale-105">
-          Prestige Leather
+        <Link href="/" className="flex items-center gap-2 text-2xl font-bold uppercase font-headline text-primary transition-transform hover:scale-105">
+          <Image src="/logo.png" alt="Prestige Leather Logo" width={40} height={40} className="h-10 w-auto" />
+          <span>Prestige Leather</span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navItems.map((item) => (
@@ -65,8 +66,9 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col p-6">
-                <Link href="/" className="mb-8 text-2xl font-bold uppercase font-headline text-primary" onClick={handleLinkClick}>
-                  Prestige Leather
+                <Link href="/" className="mb-8 flex items-center gap-2 text-2xl font-bold uppercase font-headline text-primary" onClick={handleLinkClick}>
+                  <Image src="/logo.png" alt="Prestige Leather Logo" width={40} height={40} className="h-10 w-auto" />
+                  <span>Prestige Leather</span>
                 </Link>
                 <nav className="flex flex-col gap-6">
                   {navItems.map((item) => (

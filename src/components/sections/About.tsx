@@ -38,14 +38,15 @@ export default function About() {
           <motion.div variants={fadeIn} className="flex items-center justify-center">
             <Card className="overflow-hidden rounded-lg shadow-lg">
               <CardContent className="p-0">
-                <Image
-                  src="/craftsman.jpg"
-                  alt="Craftsman working on a leather jacket"
-                  data-ai-hint="leather craft"
-                  width={600}
-                  height={450}
-                  className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
-                />
+              <Image
+  src="/salah-eddine-haddad-N5I-Llkftag-unsplash.jpg"
+  alt="Craftsman working on a leather jacket"
+  width={400}
+  height={250}
+  className="max-w-sm h-auto rounded-md object-cover transition-transform duration-300 hover:scale-105"
+/>
+
+
               </CardContent>
             </Card>
           </motion.div>
