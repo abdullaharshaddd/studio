@@ -12,7 +12,6 @@ const navItems = [
   { name: 'About', href: '#about' },
   { name: 'Products', href: '#products' },
   { name: 'Why Us', href: '#why-us' },
-  { name: 'Style Match', href: '#style-match' },
 ];
 
 export default function Header() {

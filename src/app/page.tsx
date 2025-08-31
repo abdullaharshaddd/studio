@@ -6,7 +6,6 @@ import About from '@/components/sections/About';
 import Products from '@/components/sections/Products';
 import WhyChooseUs from '@/components/sections/WhyChooseUs';
 import Contact from '@/components/sections/Contact';
-import StyleMatch from '@/components/sections/StyleMatch';
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
         <About />
         <Products />
         <WhyChooseUs />
-        <StyleMatch />
         <Contact />
       </main>
       <Footer />
