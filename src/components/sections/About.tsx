@@ -39,7 +39,7 @@ export default function About() {
             <Card className="overflow-hidden rounded-lg shadow-lg">
               <CardContent className="p-0">
                 <Image
-                  src="https://images.unsplash.com/photo-1599623572452-458f24445358?q=80&w=600&auto=format&fit=crop"
+                  src="/craftsman.jpg"
                   alt="Craftsman working on a leather jacket"
                   data-ai-hint="leather craft"
                   width={600}
