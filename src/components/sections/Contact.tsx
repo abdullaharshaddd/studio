@@ -89,9 +89,9 @@ export default function Contact() {
             variants={fadeIn}
           >
              <h3 className="font-headline text-2xl font-bold">Get in Touch Directly</h3>
-             <a href="mailto:info@prestigeleathers.com" className="flex items-center gap-4 text-lg text-foreground transition-colors hover:text-primary">
+             <a href="mailto:farhanimran5882@gmail.com" className="flex items-center gap-4 text-lg text-foreground transition-colors hover:text-primary">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><Mail className="h-6 w-6 text-primary" /></div>
-                <span>info@prestigeleathers.com</span>
+                <span>farhanimran5882@gmail.com</span>
              </a>
              <a href="https://wa.me/17807789577" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-lg text-foreground transition-colors hover:text-primary">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><Phone className="h-6 w-6 text-primary" /></div>

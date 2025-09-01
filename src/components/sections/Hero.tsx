@@ -16,13 +16,13 @@ export default function Hero() {
   return (
     <section id="home" className="relative h-[calc(100vh-5rem)] min-h-[600px] w-full">
       <Image
-        src="https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?q=80&w=1920&auto=format&fit=crop"
-        alt="Premium leather jackets"
-        data-ai-hint="leather jackets"
-        fill
-        className="object-cover"
-        priority
-      />
+  src="/new.jpg"
+  alt="Premium leather jackets"
+  data-ai-hint="leather jackets"
+  fill
+  className="object-cover"
+  priority
+/>
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
         <div className="container mx-auto px-4 md:px-6">
