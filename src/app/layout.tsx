@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Prestige Leather',
   description: 'Exporting Premium Leather Jackets Worldwide',
   icons: {
-    icon: '/favicon.png', // served from public/favicon.png
+    icon: '/favicon.ico', // served from public/favicon.ico
   },
 };
 
