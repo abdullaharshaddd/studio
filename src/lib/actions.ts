@@ -16,13 +16,12 @@ export async function submitInquiry(data: z.infer<typeof formSchema>) {
     return { success: false, message: "Invalid data provided." };
   }
   
+  // In a real application, you would integrate with an email service here.
+  // For now, we are logging the inquiry to the server console.
   console.log("New Inquiry Received:", parsedData.data);
-  
-  // In a real application, you would integrate with an email service (e.g., Resend, SendGrid)
-  // or save the inquiry to a database here.
   
   // Simulate network delay
   await new Promise(resolve => setTimeout(resolve, 1000)); 
 
-  return { success: true, message: "Thank you for your inquiry! We will get back to you shortly." };
+  return { success: true, message: "Thank you for your message! We have received your inquiry and will get back to you shortly." };
 }
