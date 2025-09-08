@@ -6,6 +6,7 @@ import About from '@/components/sections/About';
 import Products from '@/components/sections/Products';
 import WhyChooseUs from '@/components/sections/WhyChooseUs';
 import Contact from '@/components/sections/Contact';
+import { Toaster } from '@/components/ui/toaster';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <Toaster />
     </div>
   );
 }
